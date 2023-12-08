@@ -9,6 +9,8 @@ import UIKit
 
 class WelcomeView: UIView {
     
+    var didTapStart: (() -> Void)?
+    
     private lazy var backgroundImage: UIImageView = {
         let imageView = UIImageView(image: Images.Welcome.background)
         imageView.contentMode = .scaleToFill
@@ -57,7 +59,7 @@ class WelcomeView: UIView {
     }()
     
     @objc func didTapStartButton() {
-        
+        didTapStart?()
     }
     
     override init(frame: CGRect) {

@@ -1,17 +1,17 @@
 //
-//  ViewController.swift
+//  CategoriesViewController.swift
 //  GroceriesAppUIKit
 //
-//  Created by Jacob Perez on 12/5/23.
+//  Created by Jacob Perez on 12/7/23.
 //
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+class CategoriesViewController: UIViewController {
     
-    private let welcomeView = WelcomeView()
+    private let categoriesView = CategoriesView()
     var router: AppRouter
-    
+
     init(router: AppRouter) {
         self.router = router
         super.init(nibName: nil, bundle: nil)
@@ -20,25 +20,23 @@ class WelcomeViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
         layout()
+        setupNavigationController()
         
     }
-    
     private func setup() {
-        view.addSubview(welcomeView)
-        welcomeView.didTapStart = { [weak self] in
-            guard let self = self else { return }
-            self.router.pushCategoriesViewController()
-        }
+        view.addSubview(categoriesView)
     }
+    
     private func layout() {
-        welcomeView.pinToEdges(of: view)
+        categoriesView.pinToEdges(of: view)
+    }
+
+    private func setupNavigationController() {
+        title = "Find Products"
+        navigationItem.setHidesBackButton(true, animated: false)
     }
 }
-
-
-

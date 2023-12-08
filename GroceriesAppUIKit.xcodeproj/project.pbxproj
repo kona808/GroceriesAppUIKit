@@ -17,6 +17,8 @@
 		FF0ABB752B21234A00166A78 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0ABB742B21234A00166A78 /* Images.swift */; };
 		FF0ABB772B2123CC00166A78 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0ABB762B2123CC00166A78 /* UIView+Extension.swift */; };
 		FF0ABB792B228D0C00166A78 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0ABB782B228D0C00166A78 /* WelcomeView.swift */; };
+		FF37085A2B22BB0A00948B88 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3708592B22BB0A00948B88 /* CategoriesViewController.swift */; };
+		FF37085C2B22BF0300948B88 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF37085B2B22BF0300948B88 /* CategoriesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		FF0ABB742B21234A00166A78 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		FF0ABB762B2123CC00166A78 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		FF0ABB782B228D0C00166A78 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		FF3708592B22BB0A00948B88 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		FF37085B2B22BF0300948B88 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 			children = (
 				FF0ABB782B228D0C00166A78 /* WelcomeView.swift */,
 				FF0ABB6C2B1FEB5D00166A78 /* Controllers */,
+				FF37085B2B22BF0300948B88 /* CategoriesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				FF0ABB5A2B1FEAE100166A78 /* WelcomeViewController.swift */,
+				FF3708592B22BB0A00948B88 /* CategoriesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -199,11 +205,13 @@
 			files = (
 				FF0ABB5B2B1FEAE100166A78 /* WelcomeViewController.swift in Sources */,
 				FF0ABB772B2123CC00166A78 /* UIView+Extension.swift in Sources */,
+				FF37085A2B22BB0A00948B88 /* CategoriesViewController.swift in Sources */,
 				FF0ABB752B21234A00166A78 /* Images.swift in Sources */,
 				FF0ABB792B228D0C00166A78 /* WelcomeView.swift in Sources */,
 				FF0ABB572B1FEAE100166A78 /* AppDelegate.swift in Sources */,
 				FF0ABB732B21207000166A78 /* AppRouter.swift in Sources */,
 				FF0ABB592B1FEAE100166A78 /* SceneDelegate.swift in Sources */,
+				FF37085C2B22BF0300948B88 /* CategoriesView.swift in Sources */,
 				FF0ABB712B21205A00166A78 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
