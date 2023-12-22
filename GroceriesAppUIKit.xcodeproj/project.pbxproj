@@ -19,6 +19,9 @@
 		FF0ABB792B228D0C00166A78 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0ABB782B228D0C00166A78 /* WelcomeView.swift */; };
 		FF37085A2B22BB0A00948B88 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3708592B22BB0A00948B88 /* CategoriesViewController.swift */; };
 		FF37085C2B22BF0300948B88 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF37085B2B22BF0300948B88 /* CategoriesView.swift */; };
+		FF8677822B338D6700BAA99B /* CategoryCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8677812B338D6700BAA99B /* CategoryCardModel.swift */; };
+		FF8677852B338F3C00BAA99B /* CategoryCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8677842B338F3C00BAA99B /* CategoryCardCell.swift */; };
+		FF8677872B339D6400BAA99B /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8677862B339D6400BAA99B /* CategoriesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		FF0ABB782B228D0C00166A78 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		FF3708592B22BB0A00948B88 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		FF37085B2B22BF0300948B88 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		FF8677812B338D6700BAA99B /* CategoryCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardModel.swift; sourceTree = "<group>"; };
+		FF8677842B338F3C00BAA99B /* CategoryCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCardCell.swift; sourceTree = "<group>"; };
+		FF8677862B339D6400BAA99B /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 		FF0ABB6A2B1FEB5000166A78 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FF8677862B339D6400BAA99B /* CategoriesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -102,6 +109,7 @@
 		FF0ABB6C2B1FEB5D00166A78 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FF8677832B338F2400BAA99B /* Cell */,
 				FF0ABB5A2B1FEAE100166A78 /* WelcomeViewController.swift */,
 				FF3708592B22BB0A00948B88 /* CategoriesViewController.swift */,
 			);
@@ -111,6 +119,7 @@
 		FF0ABB6D2B1FEB6400166A78 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FF8677812B338D6700BAA99B /* CategoryCardModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,6 +140,14 @@
 				FF0ABB762B2123CC00166A78 /* UIView+Extension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FF8677832B338F2400BAA99B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FF8677842B338F3C00BAA99B /* CategoryCardCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,12 +221,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF0ABB5B2B1FEAE100166A78 /* WelcomeViewController.swift in Sources */,
+				FF8677852B338F3C00BAA99B /* CategoryCardCell.swift in Sources */,
 				FF0ABB772B2123CC00166A78 /* UIView+Extension.swift in Sources */,
 				FF37085A2B22BB0A00948B88 /* CategoriesViewController.swift in Sources */,
 				FF0ABB752B21234A00166A78 /* Images.swift in Sources */,
 				FF0ABB792B228D0C00166A78 /* WelcomeView.swift in Sources */,
 				FF0ABB572B1FEAE100166A78 /* AppDelegate.swift in Sources */,
+				FF8677822B338D6700BAA99B /* CategoryCardModel.swift in Sources */,
 				FF0ABB732B21207000166A78 /* AppRouter.swift in Sources */,
+				FF8677872B339D6400BAA99B /* CategoriesViewModel.swift in Sources */,
 				FF0ABB592B1FEAE100166A78 /* SceneDelegate.swift in Sources */,
 				FF37085C2B22BF0300948B88 /* CategoriesView.swift in Sources */,
 				FF0ABB712B21205A00166A78 /* Color+Extension.swift in Sources */,

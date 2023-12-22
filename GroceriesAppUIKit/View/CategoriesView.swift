@@ -22,6 +22,7 @@ class CategoriesView: UIView {
         layout.scrollDirection = .vertical
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.showsVerticalScrollIndicator = false
+        collectionView.register(CategoryCardCell.self, forCellWithReuseIdentifier: "CategoryCardCell")
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
     }()

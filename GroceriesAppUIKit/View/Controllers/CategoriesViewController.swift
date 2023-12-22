@@ -11,7 +11,8 @@ class CategoriesViewController: UIViewController {
     
     private let categoriesView = CategoriesView()
     var router: AppRouter
-
+    private let viewModel = CategoriesViewModel()
+        
     init(router: AppRouter) {
         self.router = router
         super.init(nibName: nil, bundle: nil)
@@ -29,6 +30,8 @@ class CategoriesViewController: UIViewController {
     }
     private func setup() {
         view.addSubview(categoriesView)
+        categoriesView.collectionView.delegate = self
+        categoriesView.collectionView.dataSource = self
     }
     
     private func layout() {
@@ -40,3 +43,23 @@ class CategoriesViewController: UIViewController {
         navigationItem.setHidesBackButton(true, animated: false)
     }
 }
+
+extension CategoriesViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel.categoriesList.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCardCell", for: indexPath) as? CategoryCardCell else { return CategoryCardCell() }
+        // Loop through the integers of the categoriesList
+        let item = viewModel.categoriesList[indexPath.row]
+        // Populate the view with the proper information of the viewModel so we can set it in the view
+        cell.model = item
+        
+        
+        return cell
+    }
+}
+
+
+
