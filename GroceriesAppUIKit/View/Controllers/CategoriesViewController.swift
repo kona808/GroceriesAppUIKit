@@ -59,6 +59,11 @@ extension CategoriesViewController: UICollectionViewDelegate, UICollectionViewDa
         
         return cell
     }
+    
+    // set the size of the category card
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 160, height: 180)
+    }
 }
 
 

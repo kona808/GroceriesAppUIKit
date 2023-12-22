@@ -57,8 +57,8 @@ extension CategoriesView {
             searchBar.trailingAnchor.constraint (equalTo: trailingAnchor, constant: -20),
             
             collectionView.topAnchor.constraint(equalTo: searchBar.bottomAnchor, constant: 16),
-            collectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            collectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            collectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
+            collectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
             collectionView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 8)
         ])
     }
